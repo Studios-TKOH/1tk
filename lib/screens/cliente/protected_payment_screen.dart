@@ -1,21 +1,27 @@
 import 'package:flutter/material.dart';
+
 import '../../core/utils.dart';
 import '../../mock/mock_data_sr.dart';
-import '../../widgets/shared_widgets.dart';
+import '../../widgets/app_button.dart';
 import '../../widgets/app_dialogs.dart';
+import '../../widgets/info_card.dart';
+import '../../widgets/payment_breakdown_card.dart';
+import '../../widgets/tkoh_page.dart';
 
 class ProtectedPaymentScreen extends StatelessWidget {
   const ProtectedPaymentScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final breakdown = calculatePayment(
       amount: mockRequest.budget,
       isPremiumWorker: premiumWorker.premium,
     );
+
     return TKOHPage(
-      title: 'Bóveda TKOH',
+      title: 'Bóveda de pago protegida',
       subtitle:
-          'El pago queda protegido hasta que ambas partes cierren el servicio.',
+          'El dinero del cliente está seguro hasta que ambas partes confirmen la finalización.',
       children: [
         const _StatusTimeline(),
         const SizedBox(height: 18),
@@ -33,6 +39,7 @@ class ProtectedPaymentScreen extends StatelessWidget {
 
 class _StatusTimeline extends StatelessWidget {
   const _StatusTimeline();
+
   @override
   Widget build(BuildContext context) {
     return const Column(
