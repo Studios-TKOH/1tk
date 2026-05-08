@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../widgets/shared_widgets.dart';
+
+import '../../widgets/app_button.dart';
 import '../../widgets/app_dialogs.dart';
+import '../../widgets/tkoh_page.dart';
 
 class WorkerKycScreen extends StatelessWidget {
   const WorkerKycScreen({super.key});

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+
 import '../../core/utils.dart';
 import '../../mock/mock_data_sr.dart';
-import '../../widgets/shared_widgets.dart';
+import '../../widgets/info_card.dart';
+import '../../widgets/payment_breakdown_card.dart';
+import '../../widgets/tkoh_page.dart';
 
 class WorkerEarningsScreen extends StatelessWidget {
   const WorkerEarningsScreen({super.key});

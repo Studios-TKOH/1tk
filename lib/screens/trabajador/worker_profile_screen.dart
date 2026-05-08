@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../models/worker_profile.dart';
+
 import '../../mock/mock_data_sr.dart';
-import '../../widgets/shared_widgets.dart';
+import '../../models/worker_profile.dart';
+import '../../widgets/info_card.dart';
+import '../../widgets/mini_status.dart';
+import '../../widgets/tkoh_page.dart';
 
 class WorkerProfileScreen extends StatelessWidget {
   const WorkerProfileScreen({super.key});
